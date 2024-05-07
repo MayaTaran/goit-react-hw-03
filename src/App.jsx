@@ -41,6 +41,7 @@ const App = () => {
 
   return (
     <div>
+        <h1>Phonebook</h1>
       <ContactForm onSubmit={handleAddContact} />
       <SearchBox onSearchChange={handleSearchChange} />
       <ContactList 

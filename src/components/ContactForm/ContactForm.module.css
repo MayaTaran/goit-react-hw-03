@@ -1,0 +1,23 @@
+.form {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  width: 310px;
+  padding: 16px;
+}
+.inputField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+.input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 280px;
+}
+.button {
+  border: 1px solid #fff;
+  margin-top: 16px;
+}

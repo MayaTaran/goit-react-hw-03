@@ -1,6 +1,6 @@
 import { Contact } from '../Contact/Contact.jsx';
 
-
+import css from "./ContactList.module.css";
 
  export const ContactList = ({ contacts, searchQuery, onDelete }) => {
  
@@ -13,7 +13,7 @@ import { Contact } from '../Contact/Contact.jsx';
   : contacts;
 
   return (
-    <div>
+    <div className={css.container}>
       {filteredContacts.map(contact => (
         <Contact 
           key={contact.id}

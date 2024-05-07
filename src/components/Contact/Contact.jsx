@@ -1,12 +1,19 @@
-export const Contact = ({id, name, number, onDelete}) => {
+import { IoPersonSharp } from "react-icons/io5";
+import { FaPhoneAlt } from "react-icons/fa";
+import css from "./Contact.module.css";
+
+export const Contact = ({ id, name, number, onDelete }) => {
 
   return (
-    <div>
+    <div className={css.card}>
       <div>
-        <p>{name}</p>
-        <p>{number}</p>
+        <div className={css.text}><IoPersonSharp />
+          <p>{name}</p></div>
+        <div className={css.text}>
+          <FaPhoneAlt />
+        <p>{number}</p></div>
       </div>
-      <button onClick={() => onDelete(id)}>Delete</button> 
+      <button className={css.button} onClick={() => onDelete(id)}>Delete</button> 
     </div>
   );
 
